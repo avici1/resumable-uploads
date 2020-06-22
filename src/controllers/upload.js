@@ -60,7 +60,6 @@ export default class Uploader {
                 res.end("Success " + upload.bytesReceived);
             } else {
                 // connection lost, we leave the unfinished file around
-                debug("File unfinished, stopped at " + upload.bytesReceived);
                 res.end();
             }
         });

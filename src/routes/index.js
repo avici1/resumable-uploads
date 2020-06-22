@@ -1,9 +1,9 @@
 import { Router } from  'express';
 import Controller from '../controllers/upload';
-const app = new Router();
+const app =  Router();
 
 
-app.get('/status', Controller.default.onStatus);
-app.post('/upload', Controller.default.onUpload);
+app.get('/status', Controller.onStatus);
+app.post('/upload', Controller.onUpload);
 
 export default app;
